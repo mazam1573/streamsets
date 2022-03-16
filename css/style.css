@@ -1,0 +1,386 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 13.5vh;
+    background-image: url('../images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brand {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand img {
+    height: 62%;
+}
+
+.main {
+    width: 100%;
+}
+
+.main h1 {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    word-spacing: .3em;
+    margin-bottom: unset;
+}
+
+.container {
+    width: 74%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-main {
+    width: 100%;
+    padding: 5px;
+}
+
+.left-main h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 1.2em;
+}
+
+.left-main .book-specs {
+    display: grid;
+    grid-template-columns: repeat(2, 175px);
+    grid-template-rows: repeat(2, 180px);
+    gap: 34px;
+}
+
+.book-specs .spec-card {
+    background: linear-gradient(to bottom, #5CB2E5, #1F4299);
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    width: 175px;
+    border-radius: 2px;
+}
+
+.spec-card img,
+.user-card img {
+    height: 63px;
+    margin-top: .9em;
+}
+
+.spec-card p,
+.user-card p {
+    text-align: center;
+    color: #fff;
+    line-height: 24px;
+    margin: unset;
+    width: 80%;
+}
+
+.history {
+    margin-top: 38px;
+    font-size: 25px;
+    letter-spacing: 0.7px;
+    margin-bottom: .9em !important;
+}
+
+.left-main p {
+    width: 90%;
+    line-height: 26px;
+    margin: unset;
+    margin-bottom: 1em;
+}
+
+.book-user {
+    display: grid;
+    grid-template-columns: repeat(2, 176px);
+    gap: 34px;
+}
+
+.book-user .user-card {
+    background: linear-gradient(to bottom, #5CB2E5, #1F4299);
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    width: 175px;
+    height: 140px;
+    border-radius: 2px;
+}
+
+.user-card p {
+    margin-top: 10px;
+}
+
+.form {
+    width: 83%;
+    margin: 40px 27px;
+}
+
+.form form {
+    background: #0B3689;
+    width: 100%;
+    height: 42vh;
+    margin: auto;
+    padding: 34px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+form h3 {
+    width: 100%;
+    margin: unset;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.6px;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 24px;
+    margin-top: 18px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label {
+    color: #fff;
+    letter-spacing: 1.2px;
+}
+
+.form-field input,
+.form-field select {
+    width: 91%;
+    height: 36px;
+    margin-top: 4px;
+    border-radius: 2px;
+    border: none;
+    padding: 0 10px;
+}
+
+.form-field select {
+    width: 94%;
+}
+
+.form-field select option {
+    height: 36px;
+}
+
+.email {
+    width: 100%;
+}
+
+.email input {
+    width: 96%;
+}
+
+.btn-section {
+    width: 100%;
+    height: 13vh;
+    padding: 47px 34px 0;
+    background-image: url('../images/banner-small.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    position: relative;
+}
+
+.btn-section button {
+    width: 16vw;
+    height: 58px;
+    border-radius: 2px;
+    background: #FFA72C;
+    font-size: 1.5em;
+    /* font-size: 27px; */
+    color: #fff;
+    border: none;
+}
+
+.btn-section img {
+    position: absolute;
+    width: 23em;
+    top: -2.4em;
+    right: -8em;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    height: 16vh;
+    background: #1B2439;
+    margin-top: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.brand-footer img {
+    height: 50%;
+}
+
+.copyright {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 24px;
+}
+
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+@media (max-width: 1199px) {
+    .btn-section img {
+        width: 20em;
+    }
+}
+
+@media (max-width: 1199px) {
+    .form form {
+        height: 64vh;
+    }
+
+    .field-group {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    .form-field {
+        width: 100%;
+    }
+
+    .form-field input,
+    .form-field select {
+        width: 94%;
+    }
+}
+
+@media (max-width: 1099px) {
+    .form form {
+        height: 70vh;
+    }
+
+    .btn-section img {
+        width: 17em;
+        top: -2em;
+        right: -3em;
+    }
+
+    .btn-section button {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 999px) {
+    .container {
+        width: 90%;
+    }
+
+    .btn-section img {
+        right: -1em;
+    }
+}
+
+@media (max-width: 899px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main h1 {
+        font-size: 36px;
+    }
+
+    .container div:nth-last-of-type(2) {
+        order: 1;
+    }
+
+    .btn-section button {
+        width: 32vw;
+        font-size: 1.5em;
+    }
+
+    .btn-section img {
+        width: 13em;
+        top: 1em;
+        right: 0em;
+    }
+
+    .form-field input,
+    .form-field select {
+        width: 94%;
+    }
+
+    .form {
+        width: 78%;
+    }
+
+    .form-field select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 499px) {
+    .brand img {
+        height: 50%;
+    }
+
+    .form {
+        margin: 40px 0px;
+    }
+
+    .left-main .book-specs,
+    .book-user {
+        grid-template-columns: repeat(2, 160px);
+        grid-template-rows: repeat(2, 164px);
+        gap: 15px;
+    }
+
+    .book-specs .spec-card,
+    .book-user .user-card {
+        width: 160px;
+    }
+
+    .btn-section button {
+        width: 100%;
+    }
+
+    .btn-section img {
+        display: none;
+    }
+
+    footer {
+        height: 26vh;
+        margin: unset;
+    }
+
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+}
